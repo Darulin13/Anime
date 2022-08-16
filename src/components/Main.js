@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 
@@ -70,13 +70,13 @@ const Rating = styled.p`
     border:solid 2px black;
     background-color:red;
 `
-const Release_date = styled.p`
+const Release_Date = styled.p`
 
     font-size:1.5rem;
 
 
 `
-const Running_time = styled.p`
+const Running_Time = styled.p`
   
     font-size:1.5rem;
 
@@ -106,8 +106,8 @@ export default function Main() {
                         <Poster src={item.movie_banner} alt={item.title} />
                         <Information>
                             <Rating>{item.rt_score}</Rating>
-                            <Release_date>{item.release_date}</Release_date>
-                            <Running_time>{item.running_time}Min</Running_time>
+                            <Release_Date>{item.release_date}</Release_Date>
+                            <Running_Time>{item.running_time}Min</Running_Time>
                         </Information>
                        
                         <Description>{item.description}</Description>
