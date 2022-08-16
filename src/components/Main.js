@@ -70,13 +70,13 @@ const Rating = styled.p`
     border:solid 2px black;
     background-color:red;
 `
-const Release_Date = styled.p`
+const ReleaseDate = styled.p`
 
     font-size:1.5rem;
 
 
 `
-const Running_Time = styled.p`
+const RunningTime = styled.p`
   
     font-size:1.5rem;
 
@@ -106,8 +106,8 @@ export default function Main() {
                         <Poster src={item.movie_banner} alt={item.title} />
                         <Information>
                             <Rating>{item.rt_score}</Rating>
-                            <Release_Date>{item.release_date}</Release_Date>
-                            <Running_Time>{item.running_time}Min</Running_Time>
+                            <ReleaseDate>{item.release_date}</ReleaseDate>
+                            <RunningTime>{item.running_time}Min</RunningTime>
                         </Information>
                        
                         <Description>{item.description}</Description>
